@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  angular:
+    hostname: localhost
+    build: client
+    ports:
+      - "80:80"
+
+  express:
+    build: server
+    ports:
+      - "8000:8000"
+  

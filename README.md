@@ -1,8 +1,8 @@
 # Build with docker
 
-docker build -t webapp-image .
+docker-compose build
 
 # Run with docker
 
-docker run --name webapp-container -d -p 80:4200 webapp-image
+docker-compose up -d
 
